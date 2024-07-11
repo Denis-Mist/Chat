@@ -69,8 +69,147 @@ class _MainChatScreen extends State<MainChatScreen> {
                           SizedBox(width: 10), // add some space between the text and the SVG
                           IconButton(
                             icon: SvgPicture.asset('lib/assets/ingognito.svg', width: 40, height: 20),
-                            onPressed: () {}, // add your onPressed callback here
+                            onPressed: () {
+                              showModalBottomSheet(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return Container(
+                                    color: Color.fromRGBO(13, 19, 51, 1), // Set background color to blue
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        // Add a close button
+                                        Align(
+                                          alignment: Alignment.topRight,
+                                          child: IconButton(
+                                            onPressed: () {
+                                              Navigator.pop(context); // Close the bottom sheet
+                                            },
+                                            //SvgPicture.asset('lib/assets/close.svg'),
+                                            icon: SvgPicture.asset('lib/assets/close.svg'),
+                                          ),
+                                        ),
+                                        SvgPicture.asset('lib/assets/glass.svg'),
+                                        SizedBox(height: 15,),
+                                        Text(
+                                          'Режим инкогнито на 24 часа',
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w500,
+                                            fontStyle: FontStyle.italic,
+                                            height: 18.38 / 16,
+                                            color: Color.fromRGBO(246, 244, 244, 1),
+                                            fontFamily: 'Ubuntu',
+                                          ),
+                                        ),
+                                        SizedBox(height: 15,),
+                                        Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 25.0), // add 16px padding on left and right sides
+                                          child: Text(
+                                            'Стань невидимкой в ленте и чатах, скрой объявление и наслаждайся <Space> незамеченным',
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w300,
+                                              height: 16.09 / 14,
+                                              color: Color.fromRGBO(188, 179, 179, 1),
+                                              fontFamily: 'Ubuntu',
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(height: 15,),
+                                        Row(  
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 15),
+                                              child: Container(
+                                                width: 103,
+                                                height: 78,
+                                                margin: EdgeInsets.only(top: 13, left: 0.33),
+                                                decoration: BoxDecoration(
+                                                  border: Border.all(
+                                                    width: 1,
+                                                    color: Color.fromRGBO(57, 55, 55, 1),
+                                                  ),
+                                                  borderRadius: BorderRadius.all(Radius.circular(8)),
+                                                  color: Color.fromRGBO(33, 32, 32, 1),
+                                                ),
+                                                padding: EdgeInsets.all(16),
+                                                child: Text(
+                                                  'gfdg',
+                                                  style: TextStyle(
+                                                    fontSize: 14,
+                                                    fontWeight: FontWeight.w300,
+                                                    height: 16.09 / 14,
+                                                    color: Color.fromRGBO(188, 179, 179, 1),
+                                                    fontFamily: 'Ubuntu',
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            Container(
+                                              width: 103,
+                                              height: 78,
+                                              margin: EdgeInsets.only(top: 13, left: 0.33),
+                                              decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  width: 1,
+                                                  color: Color.fromRGBO(57, 55, 55, 1),
+                                                ),
+                                                borderRadius: BorderRadius.all(Radius.circular(8)),
+                                                color: Color.fromRGBO(33, 32, 32, 1),
+                                              ),
+                                              padding: EdgeInsets.all(16),
+                                              child: Text(
+                                                'gfdg',
+                                                style: TextStyle(
+                                                  fontSize: 14,
+                                                  fontWeight: FontWeight.w300,
+                                                  height: 16.09 / 14,
+                                                  color: Color.fromRGBO(188, 179, 179, 1),
+                                                  fontFamily: 'Ubuntu',
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(right: 15),
+                                              child: Container(
+                                                width: 103,
+                                                height: 78,
+                                                
+                                                margin: EdgeInsets.only(top: 13, left: 0.33,right: 5),
+                                                decoration: BoxDecoration(
+                                                  border: Border.all(
+                                                    width: 1,
+                                                    color: Color.fromRGBO(57, 55, 55, 1),
+                                                  ),
+                                                  borderRadius: BorderRadius.all(Radius.circular(8)),
+                                                  color: Color.fromRGBO(33, 32, 32, 1),
+                                                ),
+                                                padding: EdgeInsets.all(16),
+                                                child: Text(
+                                                  'gfdg',
+                                                  style: TextStyle(
+                                                    fontSize: 14,
+                                                    fontWeight: FontWeight.w300,
+                                                    height: 16.09 / 14,
+                                                    color: Color.fromRGBO(188, 179, 179, 1),
+                                                    fontFamily: 'Ubuntu',
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+
+                                      ],
+                                    ),
+                                  );
+                                },
+                              );
+                            },
                           ),
+
                         ],
                       ),
         

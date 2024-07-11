@@ -70,6 +70,8 @@ flutter:
     - lib/assets/sova.svg
     - lib/assets/sova.png
     - lib/assets/micro.svg
+    - lib/assets/glass.svg
+    - lib/assets/close.svg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
