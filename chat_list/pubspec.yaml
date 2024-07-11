@@ -72,6 +72,7 @@ flutter:
     - lib/assets/micro.svg
     - lib/assets/glass.svg
     - lib/assets/close.svg
+    - lib/assets/mask.svg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
