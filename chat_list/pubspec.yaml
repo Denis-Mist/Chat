@@ -62,6 +62,14 @@ flutter:
     - lib/assets/image4.svg
     - lib/assets/ingognito.svg
     - lib/assets/heart.png
+    - lib/assets/rock.svg
+    # - lib/assets/rock.png
+    - lib/assets/rock2.png
+    - lib/assets/button.svg
+    - lib/assets/plus.svg
+    - lib/assets/sova.svg
+    - lib/assets/sova.png
+    - lib/assets/micro.svg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

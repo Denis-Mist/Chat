@@ -44,8 +44,12 @@ class _ChatBubble extends State<ChatBubble> {
 Widget build(BuildContext context) {
   return InkWell(
     onTap: () {
-      // Add your tap event handler here
       print('Chat bubble tapped');
+      Navigator.pushNamed(
+                              context, 
+                              'person_chat',
+                              arguments: widget.imageUrl,
+                            );
     },
     child: Container(
       margin: const EdgeInsets.only(left: 12, right: 12, top: 12, bottom: 12),

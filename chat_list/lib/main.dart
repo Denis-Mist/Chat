@@ -1,4 +1,5 @@
 import 'package:chat_list/features/Chat_screen/main_chat_screen.dart';
+import 'package:chat_list/features/Chat_screen/person_chat.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       //initialRoute: firstLaunch ? 'welcome' : '/',
       routes: {
         '/': (context) => const MainChatScreen(),
-        // 'registration': (context) => const Registration(),
+        'person_chat': (context) => const PersonChat(),
         // 'main_screen_chat': (context) => const MainChatScreen(),
       },
       onUnknownRoute: (settings) {},

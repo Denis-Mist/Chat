@@ -18,7 +18,7 @@ class _ChatBubbleH extends State<ChatBubbleH> {
     child: ClipRRect(
       borderRadius: BorderRadius.circular(32),
       child: Image.asset(
-        'lib/assets/heart.png', // replace with your png image asset
+        'lib/assets/heart.png', 
         fit: BoxFit.fill,
         errorBuilder: (
           BuildContext context,
